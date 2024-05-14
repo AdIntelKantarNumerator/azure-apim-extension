@@ -1,9 +1,9 @@
 {
   "manifestVersion": 1,
-  "id": "apim",
-  "name": "API Management Suite",
-  "version": "3.5.2",
-  "publisher": "stephane-eyskens",
+  "id": "vixkapim",
+  "name": "VivvixKantar API Management Suite",
+  "version": "3.5.5",
+  "publisher": "VivvixKantar",
   "tags": [
     "API",
     "Security"
@@ -16,10 +16,10 @@
   "public": true,
   "links": {
     "getstarted": {
-      "uri": "https://github.com/stephaneey/azure-apim-extension"
+      "uri": "https://github.com/AdIntelKantarNumerator/azure-apim-extension"
     },
     "support": {
-      "uri": "https://github.com/stephaneey/azure-apim-extension/issues"
+      "uri": "https://github.com/AdIntelKantarNumerator/azure-apim-extension/issues"
     }
   },
   "targets": [
@@ -36,40 +36,7 @@
   },
   "files": [
     {
-      "path": "apim"
-    },
-    {
-      "path": "apimversioned"
-    },
-    {
-      "path": "apimcreateorupdateproduct"
-    },
-    {
-      "path": "apimfunction"
-    },
-    {
-      "path": "apimfunctionversioned"
-    },
-    {
-      "path": "apimwsdl"
-    },
-    {
-      "path": "apisecuritychecker"
-    },
-    {
-      "path": "apimsavetorepository"
-    },
-    {
-      "path": "apimrestorefromrepository"
-    },
-    {
-      "path": "apimoperationpolicies"
-    },
-    {
-      "path": "apimglobalpolicy"
-    },
-    {
-      "path": "apimreleaserevision"
+      "path": "vixkapimoperationpolicies"
     },
     {
       "path": "images",
@@ -78,123 +45,13 @@
   ],
   "contributions": [
     {
-      "id": "apim",
+      "id": "vixkapimoperationpolicies",
       "type": "ms.vss-distributed-task.task",
       "targets": [
         "ms.vss-distributed-task.tasks"
       ],
       "properties": {
-        "name": "apim"
-      }
-    },
-    {
-      "id": "apimversioned",
-      "type": "ms.vss-distributed-task.task",
-      "targets": [
-        "ms.vss-distributed-task.tasks"
-      ],
-      "properties": {
-        "name": "apimversioned"
-      }
-    },
-    {
-      "id": "apisecuritychecker",
-      "type": "ms.vss-distributed-task.task",
-      "targets": [
-        "ms.vss-distributed-task.tasks"
-      ],
-      "properties": {
-        "name": "apisecuritychecker"
-      }
-    },
-    {
-      "id": "apimwsdl",
-      "type": "ms.vss-distributed-task.task",
-      "targets": [
-        "ms.vss-distributed-task.tasks"
-      ],
-      "properties": {
-        "name": "apimwsdl"
-      }
-    },
-    {
-      "id": "apimcreateorupdateproduct",
-      "type": "ms.vss-distributed-task.task",
-      "targets": [
-        "ms.vss-distributed-task.tasks"
-      ],
-      "properties": {
-        "name": "apimcreateorupdateproduct"
-      }
-    },
-    {
-      "id": "apimfunction",
-      "type": "ms.vss-distributed-task.task",
-      "targets": [
-        "ms.vss-distributed-task.tasks"
-      ],
-      "properties": {
-        "name": "apimfunction"
-      }
-    },
-    {
-      "id": "apimfunctionversioned",
-      "type": "ms.vss-distributed-task.task",
-      "targets": [
-        "ms.vss-distributed-task.tasks"
-      ],
-      "properties": {
-        "name": "apimfunctionversioned"
-      }
-    },
-    {
-      "id": "apimsavetorepository",
-      "type": "ms.vss-distributed-task.task",
-      "targets": [
-        "ms.vss-distributed-task.tasks"
-      ],
-      "properties": {
-        "name": "apimsavetorepository"
-      }
-    },
-    {
-      "id": "apimrestorefromrepository",
-      "type": "ms.vss-distributed-task.task",
-      "targets": [
-        "ms.vss-distributed-task.tasks"
-      ],
-      "properties": {
-        "name": "apimrestorefromrepository"
-      }
-    },
-    {
-      "id": "apimoperationpolicies",
-      "type": "ms.vss-distributed-task.task",
-      "targets": [
-        "ms.vss-distributed-task.tasks"
-      ],
-      "properties": {
-        "name": "apimoperationpolicies"
-      }
-    },
-    {
-      "id": "apimglobalpolicy",
-      "type": "ms.vss-distributed-task.task",
-      "targets": [
-        "ms.vss-distributed-task.tasks"
-      ],
-      "properties": {
-        "name": "apimglobalpolicy"
-      }
-    },
-    {
-      "id": "apimreleaserevision",
-      "type": "ms.vss-distributed-task.task",
-      "targets": [
-        "ms.vss-distributed-task.tasks"
-      ],
-      "properties": {
-        "name": "apimreleaserevision"
+        "name": "vixkapimoperationpolicies"
       }
     }
   ]
