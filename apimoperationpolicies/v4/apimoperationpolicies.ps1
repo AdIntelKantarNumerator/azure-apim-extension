@@ -14,6 +14,7 @@ This task creates an APIM product.
 	$operation=Get-VstsInput -Name OperationName
 	$SelectedTemplate=Get-VstsInput -Name TemplateSelector
 	$CurrentRevision=Get-VstsInput -Name CurrentRevision
+	$MicrosoftApiManagementAPIVersion = Get-VstsInput -Name MicrosoftApiManagementAPIVersion
 	if($SelectedTemplate -eq "RateAndQuota")
 	{
 		$PolicyContent = Get-VstsInput -Name RateAndQuota
@@ -85,7 +86,7 @@ This task creates an APIM product.
 	{		
 		try
 		{
-			$RevisionUrl="$($baseurl)/apis/$($api)/revisions?api-version=2019-01-01"
+			$RevisionUrl="$($baseurl)/apis/$($api)/revisions?api-version=$($MicrosoftApiManagementAPIVersion)"
 			Write-Host "Revision Url is $($RevisionUrl)"
 			$revisions=Invoke-WebRequest -UseBasicParsing -Uri $RevisionUrl -Headers $headers|ConvertFrom-Json
 			if($CurrentRevision -eq $true)
@@ -104,7 +105,7 @@ This task creates an APIM product.
 				$rev=$revisions.count
 			}
 			Write-Host "Revision to patch is $($rev)"
-			$policyapiurl=	"$($baseurl)/apis/$($api);rev=$($rev)/operations/$($operation)/policies/policy?api-version=2017-03-01"
+			$policyapiurl=	"$($baseurl)/apis/$($api);rev=$($rev)/operations/$($operation)/policies/policy?api-version=$($MicrosoftApiManagementAPIVersion)"
 			$JsonPolicies = "{
 				`"properties`": {					
 				`"policyContent`":`""+$PolicyContent+"`"
