@@ -1,6 +1,6 @@
 {
-  "id": "fbb5ba7e-f837-4f46-b31e-f34c117fdd05",
-  "name": "apim",
+  "id": "5202f46a-e031-4e42-aa77-7fcc2fe587e6",
+  "name": "vixkapim",
   "friendlyName": "API Management - Create or Update API",
   "description": "API Management - Create or update API",
   "author": "Stephane Eyskens",
@@ -13,7 +13,7 @@
   "version": {
     "Major": "3",
     "Minor": "3",
-    "Patch": "1"
+    "Patch": "3"
   },
   "minimumAgentVersion": "1.95.0",
   "instanceNameFormat": "API Management - Create/Update API $(message)",
@@ -349,7 +349,7 @@
   ],
   "execution": {
     "PowerShell3": {
-      "target": "apim.ps1"
+      "target": "vixkapim.ps1"
     }
   }
 }
