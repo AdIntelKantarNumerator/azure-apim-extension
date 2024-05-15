@@ -88,7 +88,8 @@ This task creates an APIM product.
 			$policyapiurl=	"$($baseurl)/apis/$($api)/operations/$($operation)/policies/policy?api-version=2017-03-01"
 			$JsonPolicies = "{
 				`"properties`": {					
-				`"policyContent`":`""+$PolicyContent+"`"
+					`"format`": `"xml`",
+        			`"value`":`""+$PolicyContent+"`"
 				}
 			}"
 			Write-Host "Linking policy to API USING $($policyapiurl)"

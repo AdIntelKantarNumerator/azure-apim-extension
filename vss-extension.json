@@ -2,7 +2,7 @@
   "manifestVersion": 1,
   "id": "vixkapim",
   "name": "VivvixKantar API Management Suite",
-  "version": "3.5.5",
+  "version": "3.6.4",
   "publisher": "VivvixKantar",
   "tags": [
     "API",
@@ -36,6 +36,9 @@
   },
   "files": [
     {
+      "path": "vixkapim"
+    },
+    {
       "path": "vixkapimoperationpolicies"
     },
     {
@@ -44,6 +47,16 @@
     }
   ],
   "contributions": [
+    {
+      "id": "vixkapim",
+      "type": "ms.vss-distributed-task.task",
+      "targets": [
+        "ms.vss-distributed-task.tasks"
+      ],
+      "properties": {
+        "name": "vixkapim"
+      }
+    },
     {
       "id": "vixkapimoperationpolicies",
       "type": "ms.vss-distributed-task.task",
