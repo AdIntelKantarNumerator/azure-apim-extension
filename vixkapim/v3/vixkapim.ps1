@@ -124,8 +124,8 @@ shared VNET
 "name": "'+$($newapi)+'",
 "id": "/apis/'+$($newapi)+'",
 							"properties": {
-							"contentFormat": "swagger-link-json",
-							"contentValue": "'+$($SwaggerLocation)+'",
+							"format": "swagger-link-json",
+							"value": "'+$($SwaggerLocation)+'",
 							"displayName": "'+$($DisplayName)+'",
 							"path": "'+$($path)+'",
 							"protocols":["https"]
@@ -138,8 +138,8 @@ shared VNET
 "id": "/apis/'+$($newapi)+'",
 							"properties": {
 "displayName": "'+$($DisplayName)+'",
-							"contentFormat": "openapi-link",
-							"contentValue": "'+$($SwaggerLocation)+'",							
+							"format": "openapi-link",
+							"value": "'+$($SwaggerLocation)+'",							
 							"path": "'+$($path)+'",
 							"protocols":["https"]
 						}
@@ -158,8 +158,8 @@ shared VNET
 "name": "'+$($newapi)+'",
 "id": "/apis/'+$($newapi)+'",
 								"properties": {
-								"contentFormat": "swagger-json",
-								"contentValue": "'+$($swaggercode).Replace('"','\"')+'",
+								"format": "swagger-json",
+								"value": "'+$($swaggercode).Replace('"','\"')+'",
 								"displayName": "'+$($DisplayName)+'",
 								"path": "'+$($path)+'",
 								"protocols":["https"]
@@ -178,8 +178,8 @@ shared VNET
 "name": "'+$($newapi)+'",
 "id": "/apis/'+$($newapi)+'",
 								"properties": {
-								"contentFormat": "'+$($contentFormat)+'",
-								"contentValue": "'+$($swaggercode)+'",
+								"format": "'+$($contentFormat)+'",
+								"value": "'+$($swaggercode)+'",
 								"displayName": "'+$($DisplayName)+'",
 								"path": "'+$($path)+'",
 								"protocols":["https"]
@@ -199,8 +199,8 @@ shared VNET
 "name": "'+$($newapi)+'",
 "id": "/apis/'+$($newapi)+'",
 							"properties": {
-							"contentFormat": "swagger-json",
-							"contentValue": "'+$($swaggercode).Replace('"','\"')+'",
+							"format": "swagger-json",
+							"value": "'+$($swaggercode).Replace('"','\"')+'",
 							"displayName": "'+$($DisplayName)+'",
 							"path": "'+$($path)+'"
 						 }
@@ -220,8 +220,8 @@ shared VNET
 "id": "/apis/'+$($newapi)+'",
 								"properties": {
 "displayName": "'+$($DisplayName)+'",
-								"contentFormat": "'+$($contentFormat)+'",
-								"contentValue": "'+$($swaggercode)+'",								
+								"format": "'+$($contentFormat)+'",
+								"value": "'+$($swaggercode)+'",								
 								"path": "'+$($path)+'",
 								"protocols":["https"]
 							}

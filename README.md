@@ -1,3 +1,15 @@
+Run this
+change version in file task.json
+change version in file vss-extension.json
+increment version the run this command at root folder of project
+npx tfx-cli extension create
+then login to 
+https://marketplace.visualstudio.com/manage/publishers/vivvixkantar
+and update.
+
+
+
+
 # azure-apim-extension
 Full Azure API Management suite and more VSTS extension
 # Disclaimer
